@@ -88,8 +88,8 @@ RSpec.describe SchoolsController, type: :controller do
         expect(School.first.name).to eq(@school_name)
       end
 
-      it 'redirects to schools index on successful create' do
-        expect(response).to redirect_to(schools_path)
+      it 'redirects to school page on successful create' do
+        expect(response).to redirect_to(school_path(assigns[:school]))
       end
     end
     context 'without a name' do 

@@ -1,2 +1,27 @@
-<h1>Schools#index</h1>
-<p>Find me in app/views/schools/index.html.erb</p>
+
+  <div class='text-center'>
+    <h3>School List</h3>
+  </div>
+
+<div class='container'>
+  <div class='row'>
+    <div class='card-container'>
+      <% if ! @schools.empty? %>
+        <% @schools.each do |school| %>
+          <div class='index-card text-center col-sm-4'>
+            <div class='school-name-card'>
+              <h4><%= school.name %></h4>
+            </div>
+            <hr />
+            <%= link_to 'Visit School', school_path(school), class: 'visit-school-link' %>
+            <img class='default-school-img-index' src='http://quickwit3d.com/wp-content/uploads/2013/05/BnaiYoelSchool_Exterior.jpg' />
+          </div>
+        <% end %>
+      <% else %>
+        <div class='text-center'>
+          <h4>No Schools Found. You should make one.</h4>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

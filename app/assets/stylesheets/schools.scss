@@ -1,3 +1,60 @@
-// Place all the styles related to the schools controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.index-card {
+  height: 300px;
+  width: 350px;
+  padding: 0;
+  margin: 5px; 
+  color: white;
+  background-color: #9e0000;
+}
+
+.index-card a {
+  color: white;
+}
+
+.school-name-card {
+  height: 80px;
+  position: relative;
+}
+
+.visit-school-link {
+  position: absolute;
+  left: 0;
+  margin: -40px 0 0 15px;
+}
+
+.default-school-img {
+  height: 400px;
+}
+
+.default-school-img-index {
+  margin-top: 5px;
+  height: 150px;
+}
+
+.school-save-btn {
+  margin-top: 20px;
+  background-color: #00c420;
+}
+
+.show-info-div {
+  margin-left: 20px;
+}
+
+.school-form input {
+  width: 400px;
+  color: black;
+}
+
+.school-form label {
+  font-size: 1.4em;
+}
+
+.school-form textarea {
+  color: black;
+  width: 400px;
+  height: 150px;
+}
+
+.edit-btn {
+  margin-top: 20px;
+}

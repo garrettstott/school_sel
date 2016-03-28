@@ -25,7 +25,7 @@ class SchoolsController < ApplicationController
   def create
     @school = School.new(school_params)
     if @school.save
-      redirect_to schools_path
+      redirect_to school_path(@school)
     else
       render :new
     end
@@ -38,7 +38,7 @@ class SchoolsController < ApplicationController
 
   private
     def school_params
-      params.require(:school).permit(:name, :year_built)
+      params.require(:school).permit(:name, :year_built, :phone_number, :address, :email)
     end
 
     def school

@@ -1,0 +1,38 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='school-form col-sm-10 col-sm-offset-1 text-center'>
+      <%= form_for @school do |f|%>
+
+        <br />
+          <%= f.label :name %>
+        <div class='form-group row'>
+          <%= f.text_field :name %>
+        </div>
+
+          <%= f.label :phone_number %>
+        <div class='form-group row'>
+          <%= f.text_field :phone_number %>
+        </div>
+
+          <%= f.label :address %>
+        <div class='form-grou row'>
+          <%= f.text_area :address %>
+        </div>
+
+          <%= f.label :email %>
+        <div class='form-group row'>
+          <%= f.text_field :email %>
+        </div>
+
+          <%= f.label :year_built %>
+        <div class='form-group row'>
+          <%= f.text_field :year_built %>
+        </div>
+
+        <br />
+        
+        <%= f.submit 'Save', :class => 'btn btn-secondary school-save-btn' %>
+      <% end %>
+    </div>
+  </div>
+</div>
